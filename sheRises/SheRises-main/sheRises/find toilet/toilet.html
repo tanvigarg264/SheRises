@@ -1,0 +1,37 @@
+
+<div id="details"></div>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body style="align-items: center;">
+
+<script>
+var reqcount = 0;
+navigator.geolocation.watchPosition(successCallback, errorCallback, options);
+window.open(url, windowName, specs);
+
+function successCallback(position) {
+	const { accuracy, latitude, longitude, altitude, heading, speed } = position.coords;
+    // Show a map centered at latitude / longitude.
+    reqcount++;
+    // details.innerHTML += "Latitude: "+latitude+" | Longitude: "+longitude+"<br>";
+    window.open("https://www.google.com/maps?q=Toilets+near+${latitude}and${longitude}")
+
+}
+function errorCallback(error) {
+	
+}
+var options = {
+	//enableHighAccuracy: false,
+	//timeout: 5000,
+	//maximumAge: 0
+};
+
+
+</script>
+<div class="container">
+<button type= "button" id= "btn" onclick= "successCallback()" style="align-items: center;">Show Restrooms</button>
+</div>
+<script src="../src/main.js"></script>
+</body>

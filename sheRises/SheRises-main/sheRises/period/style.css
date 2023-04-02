@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+
+body{
+    background-color: #FAF4E8;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1{
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    padding: 20px;
+    color: #FF7F50;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: #FFFDD0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #FF7F50;
+}
+
+input[type="date"], input[type="number"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    background-color: #FFA07A;
+}
+
+#nextPeriodDisplay{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #FF7F50;
+}
+
+#phaseDisplay{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #FF7F50;
+}
+#tipsDisplay{
+    font-family: 'Patua One', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #FF7F50;
+}
